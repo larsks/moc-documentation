@@ -1,9 +1,12 @@
-* [10/13 : Rahul] 
+# Foreman
 
-1. "error": {"message":"address family must be specified"}
+### [10/13 : Rahul] 
 
-This appears to be a Foreman bug according to http://projects.theforeman.org/issues/9857. 
-Followed the suggested workaround #14... 
+"error": {"message":"address family must be specified"}
 
-Administer > Settings > Provisioning
-[change] ignore_puppet_facts_for_provisioning = False
+This appears to be a [Foreman bug](http://projects.theforeman.org/issues/9857)
+
+Followed the suggested workaround #14 
+* Administer > Settings > Provisioning
+* set ignore_puppet_facts_for_provisioning = False
+

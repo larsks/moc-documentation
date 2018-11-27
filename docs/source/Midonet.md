@@ -1,10 +1,9 @@
-#### RDO installation
-https://www.rdoproject.org/networking/midonet-integration_mem-5-rhel-7-kilo-osp/
+# Midonet
+[RDO installation](https://www.rdoproject.org/networking/midonet-integration_mem-5-rhel-7-kilo-osp)
 
-#### Midonet with MOC Kilo Openstack
-https://github.com/CCI-MOC/moc/wiki/Midonet-with-openstack-Kilo-release-(MOC-puppet-deployment)
+[Midonet with MOC Kilo Openstack](Midonet-with-openstack-Kilo-release-\(MOC-puppet-deployment\).html)
 
-#### Devstack installation
+### Devstack installation
 Ubuntu/redhat with 8 GB RAM and 4+ VCPUs.
 
 ```
@@ -12,6 +11,7 @@ $ git clone https://git.openstack.org/openstack-dev/devstack
 $ cd devstack
 ```
 Create a local.conf file and dump the below content to it.
+
 ```
 #!/usr/bin/env bash
 
@@ -46,14 +46,16 @@ enable_plugin networking-midonet https://github.com/openstack/networking-midonet
 enable_plugin neutron-lbaas https://git.openstack.org/openstack/neutron-lbaas
 NEUTRON_LBAAS_SERVICE_PROVIDERV1="LOADBALANCER:Midonet:midonet.neutron.services.loadbalancer.driver.MidonetLoadbalancerDriver:default"
 ```
-Run devstack.
-```
-devstack$ ./stack.sh
-```
-#### Midonet topology
-![](https://github.com/CCI-MOC/moc/blob/master/docs/images/midonet-topology.png)
 
-#### Documentation
+Run devstack.
+```devstack$ ./stack.sh```
+
+### Midonet topology
+
+![](_static/midonet-topology.png)
+
+### Documentation
 * [Official documents](http://docs.midokura.com/)
 * [Midonet Devstack](https://github.com/openstack/networking-midonet/tree/master/devstack)
 * [Midonet rule chains](http://blog.midokura.com/2016/04/midonet-rule-chains/)
+

@@ -39,7 +39,7 @@ release = u''
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-  'sphinx_markdown_tables'
+  'sphinx_markdown_tables' #Enables processing of markdown tables
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -48,8 +48,7 @@ templates_path = ['_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-# source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = ['.rst', '.md']
 
 # The master toctree document.
 master_doc = 'index'
@@ -156,9 +155,24 @@ texinfo_documents = [
 ]
 
 from recommonmark.parser import CommonMarkParser
+from recommonmark.transform import AutoStructify
+#Allows us to only use filename.html instead of full path
+github_doc_root = ''
+def setup(app):
+    app.add_config_value(
+        'recommonmark_config', {
+            'enable_eval_rst': True,
+            'enable_auto_toc_tree': True,
+            'auto_toc_tree_section': 'Contents'
 
+        }, 
+        True
+    )
+    app.add_transform(AutoStructify)
+
+#Enables markdown parser
 source_parsers = {
-    '.md': CommonMarkParser,
+    '.md': CommonMarkParser
 }
 
-source_suffix = ['.rst', '.md']
+
