@@ -1,4 +1,5 @@
-This is the Massachusetts Open Cloud private wiki; we mostly use it to document internal configuration, activities and blogging anything that is useful to team members...
+### Current Projects
+Please visit [MOC official website](https://massopen.cloud) for complete details of current projects.
 
 ### Contacts
 * [MOC Developers Contact Information](MOC-Developers-Contact-Information.html)
@@ -11,13 +12,16 @@ This is the Massachusetts Open Cloud private wiki; we mostly use it to document 
 * [MOC Contributors Legal Agreements version y_r201503](https://drive.google.com/folderview?id=0B3HZEpE-A8qadWVpY2piSjdYdXc&usp=sharing)
 * [Trello, burndown chart, scrum tools - what the fuss ? !!! ](Trello.html)
 * [Kaizen Cluster User Registration](Kaizen-Cluster-User-Registration.html)
+* [Getting Started](Getting-Started.html)
 * [Access IPMI of Nodes](Access-IPMI-of-nodes.html)
 * [Reset Password in Kaizen Openstack](Reset-Password-in-Kaizen-Openstack.html)
+* [Debugging VNC access](Debugging-VNC-access.html)
 
 ### Knowledge base/Trainings
-* [Brocade  VCS training - lab session]<!--(VCS_Lab.pptx.pdf)-->
-* [Brocade training - instruction session]<!--(VCS_Training_01.pdf)-->
+* [Brocade  VCS training - lab session](_static/VCS_Lab.pptx.pdf)
+* [Brocade training - instruction session](_static/VCS_Training_01.pdf)
 * [Ceph Tutorials](Ceph-Tutorials.html)
+* [Production FAQ](Production-FAQ.html)
 
 ### Clusters
 * [MOC VLAN Distribution](MOC-VLAN-Distribution.html)
@@ -27,8 +31,11 @@ This is the Massachusetts Open Cloud private wiki; we mostly use it to document 
 * [Engage1 Cluster](Engage1-Cluster.html)
 * [Kumo Cluster](Kumo-Cluster.html)
 * [Kaizen Bare Metal](Kaizen-Bare-Metal.html)
+* [Ops tasks in Northeastern University MOC deployment](Ops-tasks-in-Northeastern-University-MOC-deployment.html)
+* [Ceph](Ceph.html)
 
 ### MOC/Research/Design
+* [Radiology](Radiology.html)
 * [Cloud related conferences and proceedings](Cloud-related-Conferences-and-proceedings.html)
 * [Recommended Security plan By Jason Hennessey](Recommended-Security-plan-By-Jason-Hennessey.html) Proposal for security in infrastructure
 
@@ -41,12 +48,16 @@ This is the Massachusetts Open Cloud private wiki; we mostly use it to document 
 * [Github link](https://github.com/CCI-MOC/m2)
 
 ### OpenStack
+* [OpenStack Tutorial Index](OpenStack-Tutorial-Index.html)
 * [OpenStack Summit Tokyo](OpenStack-Summit-Tokyo.html)
 * [Midonet Kilo Release](Midonet-Kilo-Release.html)
 * [Keystone to Keystone Federation](Keystone-to-Keystone-Federation.html)
 * [Mix and Match Federation](Mix-and-Match-Federation.html)
-* [Debugging-the-installed-version-of-Horizon](https://github.com/CCI-MOC/moc-public/wiki/Debugging-the-installed-version-of-Horizon)
+* [Debugging-the-installed-version-of-Horizon](Debugging-the-installed-version-of-Horizon.html)
 * [Jon Jozwiak's basic Openstack validation testing](Jon-Jozwiak's-basic-Openstack-validation-testing.html)
+* [OpenStack Glossary](OpenStack-Glossary.html)
+* [OpenStack Notes](OpenStack-Notes.html)
+* [OpenStack APIs](OpenStack-APIs.html)
 
 ### Monitoring (Definitely outdated)
 * [Resolving Sensu Email Alerts](Email-Alerting-in-Sensu.html)
@@ -95,16 +106,21 @@ This [tutorial](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-
 * [How to Use Kibana](How-to-Use-Production-Kibana.html)
 * [Filebeat](Filebeat.html)
 
-
 ### Hardware
 * [Optiplex BIOS Settings](Optiplex-BIOS-Settings.html)
 
 ### Openshift
+* [OpenShift](OpenShift.html)
 * [Openshift Setup ](Openshift-Setup.html)
 * [Spark on OpenShift](Openshift-Spark.html)
 
 ### Website
 * [MOC Website](MOC-Website.html)
 
+### Related Reading
+* Google document describing current thinking on shared provisioning layer is available [here](https://docs.google.com/document/d/110avjh50FpwprMdMb_z2LS8n2TjUsh2xbSqHm3qAAOw/edit?usp=sharing)
+* For some debugging hints, look at: [Logging and debugging in OpenStack](http://vmartinezdelacruz.com/logging-and-debugging-in-openstack/)
+
 ### Archives
 Items that are known to be under utilized will be archived at the [Archives page](Archives-page.html). Keep this last!
+

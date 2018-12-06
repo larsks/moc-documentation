@@ -1,5 +1,6 @@
-1) run the os_p.pl script
-   don't worry about the docker stuff in that script - it will fail on that
+# Adding New Etcd
+
+1) run the `os_p.pl` script. Don't worry about the docker stuff in that script - it will fail on that
 
 2) Install etcd but don't start it on the new etcd (e004)
 
@@ -19,7 +20,7 @@
         yum install iptables-services  # should already be installed
         service iptables save
 
-4) login in to a member of the etcd cluster.  And generate the new etcd server certificates there
+4) Login in to a member of the etcd cluster.  And generate the new etcd server certificates there
 
         ssh e001
         e001# cd /etc/etcd
@@ -32,7 +33,7 @@
         e001# export PREFIX="./generated_certs/etcd-$CN/"
         e001# mkdir ${PREFIX}
 
-    Create the server.csr and server.crt
+    Create the `server.csr` and `server.crt`
 
         e001# openssl req -new -keyout ${PREFIX}server.key \
         -config ca/openssl.cnf \
@@ -45,7 +46,7 @@
         -in ${PREFIX}server.csr \
         -extensions etcd_v3_ca_server -batch
 
-    Create the peer.csr and peer.crt
+    Create the `peer.csr` and `peer.crt`
 
         e001# openssl req -new -keyout ${PREFIX}peer.key \
         -config ca/openssl.cnf \
@@ -70,3 +71,4 @@
         ETCD_INITIAL_CLUSTER="e001=https://10.0.0.13:2380,e002=https://10.0.0.24:2380,
         e003=https://10.0.0.23:2380,e004=https://e004:2380"
         ETCD_INITIAL_CLUSTER_STATE="existing"
+
