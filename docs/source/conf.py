@@ -163,8 +163,7 @@ def setup(app):
         'recommonmark_config', {
             'enable_eval_rst': True,
             'enable_auto_toc_tree': True,
-            'auto_toc_tree_section': 'Contents'
-
+            'auto_toc_tree_section': 'Contents',
         }, 
         True
     )
