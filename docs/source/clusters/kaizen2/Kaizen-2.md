@@ -105,6 +105,8 @@ IP Address  Hostname/Description
 10.0.0.7    switchback.massopen.cloud (The host that backs up switch configurations).
 10.0.0.8    promtest.massopen.cloud (Test promotheus instance. Talk to Lars/Naved about it).
 10.0.0.9    p9con.massopen.cloud 
+10.0.0.50   dhcp1-ipmi.cnv.massopen.cloud
+10.0.0.51   dhcp2-ipmi.cnv.massopen.cloud
 10.0.0.255  kzn-h.infra.massopen.cloud
 10.0.3.140    ov3.massopen.cloud/kzn-e.massopen.cloud over BU public IPs from Kumo
 10.0.5.140    ov2.massopen.cloud
